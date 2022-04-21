@@ -25,3 +25,38 @@ html {
     font-size: 62.5%;
 }
 
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+}
+
+header p {
+    font-size: var(--md);
+}
+
+header div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header div h1 {
+    font-size: var(--h1);
+}
+
+header div picture {
+    width: 100px;
+    height: auto;
+}
+
+header div picture img {
+    width: 100%;
+    object-fit: contain;
+}
+
+
+
