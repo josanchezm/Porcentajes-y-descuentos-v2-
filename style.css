@@ -25,3 +25,28 @@ html {
     font-size: 62.5%;
 }
 
+footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+footer ul li {
+    font-size: var(--lg);
+    font-weight: bold;
+}
+
+footer ul li a {
+    text-decoration: none;
+}
+
+.footer-left, .footer-right {
+    padding: 15px;
+    gap: 25px;
+    text-align: center;
+}
