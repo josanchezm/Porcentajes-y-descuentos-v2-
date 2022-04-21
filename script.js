@@ -39,6 +39,9 @@ function calculoPrecioFinal() {
 
         const calculoPrecio = calculoDescuento(precioValue,descuento,monedaValue);
 
+        const descuentoAplicado = document.getElementById("Descuento");
+        descuentoAplicado.innerText = `${descuento}%`;
+
         const resultado = document.getElementById("resultadoPrecio");
         resultado.innerText = calculoPrecio;
     }
