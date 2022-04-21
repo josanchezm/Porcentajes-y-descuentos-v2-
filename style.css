@@ -11,8 +11,8 @@
     --md: 1.8rem;
     --lg: 2rem;
     --cupon: 2.5rem;
-    --h1: 4rem;
     --h2: 3rem;
+    --h1: 4rem;
 }
 
 * {
@@ -20,16 +20,17 @@
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
+    background-color: #d0ebff; 
 }
 
-body {
-    background: linear-gradient(145deg, #99c9ee, #8ca7cd);
-    box-shadow:  20px 20px 62px #a5bbd9,
-                -20px -20px 62px #dffdff;
+.container {
+    display: grid;
+    grid-template: auto 1fr auto / auto;
 }
 
 html {
     font-size: 62.5%;
+    font-family: 'Montserrat', sans-serif;
 }
 
 header { 
@@ -44,6 +45,7 @@ header {
 
 header p {
     font-size: var(--lg);
+    padding: 0 15px;
 }
 
 header div {
@@ -142,19 +144,74 @@ footer ul {
     display: flex;
     list-style: none;
     justify-content: center;
+    padding: 10px;
+    gap: 25px;
 }
 
 footer ul li {
     font-size: var(--lg);
     font-weight: bold;
+    text-align: center;
 }
 
 footer ul li a {
     text-decoration: none;
 }
 
-.footer-left, .footer-right {
-    padding: 15px;
-    gap: 25px;
-    text-align: center;
+/* codigo hasta vw: 1350px */
+
+@media(max-width: 1350px) {
+    footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* codigo hasta vw: 1000px */
+
+@media(max-width: 1000px) {
+    section picture p {
+        font-size: var(--md);
+    }
+}
+
+/* codigo hasta vw: 800px */
+
+@media(max-width: 800px) {
+    header div h1 {
+        font-size: 3rem;
+    }
+
+    header p {
+        font-size: 1.6rem;
+    }
+
+    section h2 {
+        font-size: 2.4rem;
+    }
+
+    section form {
+        font-size: 1.6rem;
+    }
+
+    footer ul li {
+        font-size: 1.6rem;
+    }
+}
+
+/* codigo hasta vw: 650px */
+
+@media(max-width: 650px) {
+    section picture {
+        width: 40%;
+    }
+}
+
+/* codigo hasta vw: 480px */
+
+@media(max-width: 480px) {
+    body {
+        gap: 50px;
+    }
 }

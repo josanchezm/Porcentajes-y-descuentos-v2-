@@ -10,59 +10,53 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
-    <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Porcentajes y descuentos</title>
-</head>
-<body>
-    <header>
-        <div>
-            <picture><img src="https://i.pinimg.com/originals/81/46/cb/8146cbe3eb0e43afee75317c3c473741.png" alt="carrito de compras"></picture>
-            <h1>Porcentajes y descuentos</h1>
-        </div>
-        <p>Los descuentos variaran en funcion del tipo de cupon que tenga: Bronce, Plata u Oro</p>
-    </header>
-
-    <section>
-        <h2>Calcule el precio a pagar de sus productos con descuento</h2>
-
-        <picture>
-            <img src="https://media.revistagq.com/photos/607826f0c28c079fa1139774/master/w_1600%2Cc_limit/Captura%2520de%2520pantalla%25202021-04-15%2520a%2520las%252013.25.14.png" alt="reloj rolex dorado">
-            <p id="Descuento"></p>
-        </picture>
-        <form action="Descuentos">
-            <label for="Precio">Ingrese el precio del producto</label> 
-            <input type="number" id="Precio" placeholder="precio producto">
-
-            <label for="Cupon">Indique el cupon que posee</label>
-            <input type="text" id="Cupon" placeholder="cupon">
-
-            <label for="Moneda">Indique la moneda que usa</label>
-            <input type="text" id="Moneda" placeholder="moneda">
-
-            <button type="button" onclick="calculoPrecioFinal()">Calculo precio final</button>
-            <p id="resultadoPrecio"></p>
-        </form>
-    </section>
-    <footer>
-        <ul class="footer-left">
-            <li>Autor: Jaime Sanchez</li>
-            <li>Metodo: HTML, CSS y JS</li>
-        </ul>
-        <ul class="footer-right">
-            <li>Contacto:</li>
-            <li><a href="https://www.facebook.com/rainy697/">Facebook</a></li>
-            <li><a href="https://www.linkedin.com/in/jaime-orlando-s%C3%A1nchez-mendieta-4bba6b1a1/">Linkedin</a></li>
-            <li><a href="https://github.com/josanchezm">Github</a></li>
-            <li>jimisanchezm@hotmail.com <br> +573014924324</li>
-        </ul>
-    </footer>
-  
-    <script src="./script.js"></script>
+    <div class="container">
+        <header>
+            <div>
+                <picture><img src="https://i.pinimg.com/originals/81/46/cb/8146cbe3eb0e43afee75317c3c473741.png" alt="carrito de compras"></picture>
+                <h1>Porcentajes y descuentos</h1>
+            </div>
+            <p>Los descuentos variaran en funcion del tipo de cupon que tenga: Bronce, Plata u Oro</p>
+        </header>
+    
+        <section>
+            <h2>Calcule el precio a pagar de sus productos con descuento</h2>
+    
+            <picture>
+                <img src="https://media.revistagq.com/photos/607826f0c28c079fa1139774/master/w_1600%2Cc_limit/Captura%2520de%2520pantalla%25202021-04-15%2520a%2520las%252013.25.14.png" alt="reloj rolex dorado">
+                <p id="Descuento"></p>
+            </picture>
+            <form action="Descuentos">
+                <label for="Precio">Ingrese el precio del producto</label> 
+                <input type="number" id="Precio" placeholder="precio producto">
+    
+                <label for="Cupon">Indique el cupon que posee</label>
+                <input type="text" id="Cupon" placeholder="cupon">
+    
+                <label for="Moneda">Indique la moneda que usa</label>
+                <input type="text" id="Moneda" placeholder="moneda">
+    
+                <button type="button" onclick="calculoPrecioFinal()">Calculo precio final</button>
+                <p id="resultadoPrecio"></p>
+            </form>
+        </section>
+        <footer>
+            <ul>
+                <li>Autor: Jaime Sanchez</li>
+                <li>Metodo: HTML, CSS y JS</li>
+            </ul>
+            <ul>
+                <li>Contacto:</li>
+                <li><a href="https://www.facebook.com/rainy697/">Facebook</a></li>
+                <li><a href="https://www.linkedin.com/in/jaime-orlando-s%C3%A1nchez-mendieta-4bba6b1a1/">Linkedin</a></li>
+                <li><a href="https://github.com/josanchezm">Github</a></li>
+                <li>jimisanchezm@hotmail.com <br> +573014924324</li>
+            </ul>
+        </footer>
+      
+        <script src="./script.js"></script>
+    </div>
 </body>
 </html>
