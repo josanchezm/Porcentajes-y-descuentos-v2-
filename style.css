@@ -211,7 +211,7 @@ footer ul li a {
 /* codigo hasta vw: 480px */
 
 @media(max-width: 480px) {
-    body {
+    .container {
         gap: 50px;
     }
 }
