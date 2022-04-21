@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Precios y porcentajes 2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porcentajes y descuentos</title>
+</head>
+<body>
+    <header>
+        <h1>Porcentajes y descuentos</h1>
+        <p>Los descuentos variaran en funcion del tipo de cupon que tengas: Bronce, Plata u Oro</p>
+    </header>
+
+    <section>
+        <h2>Calcula el precio a pagar de tus productos con descuento</h2>
+
+        <form action="Descuentos">
+            <label for="Precio">Ingrese el precio del producto</label> 
+            <input type="number" id="Precio" placeholder="precio producto">
+
+            <label for="Cupon">Indique el cupon que posee</label>
+            <input type="text" id="Cupon" placeholder="cupon">
+
+            <label for="Moneda">Indique la moneda que usa</label>
+            <input type="text" id="Moneda" placeholder="moneda">
+
+            <button type="button" onclick="calculoPrecioFinal()">Calculo precio a pagar</button>
+            <p id="resultadoPrecio"></p>
+        </form>
+    </section>
+  
+    <script src="./script.js"></script>
+</body>
+</html>
