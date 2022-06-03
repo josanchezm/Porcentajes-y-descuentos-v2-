@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./CSS/tablet-desktop.css">
 </head>
 
 <body>
@@ -19,29 +20,42 @@
                 <h1>Porcentajes y descuentos</h1>
             </div>
             <p>Los descuentos variaran en funcion del tipo de cupon que tenga: Bronce, Plata u Oro</p>
+            <h2>Pruebe su suerte para obtener un cupon</h2>
+            <picture><img src="https://www.pngplay.com/wp-content/uploads/6/Coupon-off-Background-PNG-Image.png" alt="Cupon de descuento"></picture>
+            <button type="button" onclick="cuponObtenido()">Click Aqui</button>
+            <p id="resultadoCupon"></p>
         </header>
-    
-        <section>
-            <h2>Calcule el precio a pagar de sus productos con descuento</h2>
-    
-            <picture>
-                <img src="https://media.revistagq.com/photos/607826f0c28c079fa1139774/master/w_1600%2Cc_limit/Captura%2520de%2520pantalla%25202021-04-15%2520a%2520las%252013.25.14.png" alt="reloj rolex dorado">
-                <p id="Descuento"></p>
-            </picture>
-            <form action="Descuentos">
-                <label for="Precio">Ingrese el precio del producto</label> 
-                <input type="number" id="Precio" placeholder="precio producto">
-    
-                <label for="Cupon">Indique el cupon que posee</label>
-                <input type="text" id="Cupon" placeholder="cupon">
-    
-                <label for="Moneda">Indique la moneda que usa</label>
-                <input type="text" id="Moneda" placeholder="moneda">
-    
-                <button type="button" onclick="calculoPrecioFinal()">Calculo precio final</button>
-                <p id="resultadoPrecio"></p>
-            </form>
-        </section>
+        <main>
+            <section class="product_container">
+                <div>
+                    <picture>
+                        <img src="https://media.revistagq.com/photos/607826f0c28c079fa1139774/master/w_1600%2Cc_limit/Captura%2520de%2520pantalla%25202021-04-15%2520a%2520las%252013.25.14.png" alt="reloj rolex dorado">
+                        <p id="descuento"></p>
+                    </picture>
+                    <p class="precio_producto">Precio: 1250 USD</p>
+                    <button type="button" id="botonReloj" onclick="calculoPrecioReloj()">Calculo precio final</button>
+                    <p id="resultadoPrecioReloj"></p>
+                </div>
+                <div>
+                    <picture>
+                        <img src="https://esika.tiendabelcorp.com/cdn-cgi/image/width=1200,fit=contain,f=auto/https://belc-bigdata-mdm-images-prd.s3.amazonaws.com/images/FotoProductoFondoBlancoWebRedes/210097326-FotoFondoBlanco-v02.jpg" alt="Collar de oro con una esmeralda">
+                        <p id="descuento_2"></p>
+                    </picture>
+                    <p class="precio_producto">Precio: 5000 USD</p>
+                    <button type="button" id="botonCollar" onclick="calculoPrecioCollar()">Calculo precio final</button>
+                    <p id="resultadoPrecioCollar"></p>
+                </div>
+                <div>
+                    <picture>
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_823587-MCO45645262148_042021-O.webp" alt="Boligrafo negro con dorado">
+                        <p id="descuento_3"></p> 
+                    </picture>
+                    <p class="precio_producto">Precio: 750.7 USD</p>
+                    <button type="button" id="botonBoligrafo" onclick="calculoPrecioBoligrafo()">Calculo precio final</button>
+                    <p id="resultadoPrecioBoligrafo"></p>
+                </div>  
+            </section>
+        </main>
         <footer>
             <ul>
                 <li>Autor: Jaime Sanchez</li>
